@@ -1,0 +1,19 @@
+﻿<h3>Componente de Imagenes</h3>
+
+
+<div class="Contenedor-img">
+    @if (Url != null)
+    {
+        <img src="@Url" />
+    }
+    else
+    {
+        <img src="piedra.jpg" />
+    }
+
+</div>
+
+@code{
+    [Parameter] public string Url { get; set; }
+
+}
